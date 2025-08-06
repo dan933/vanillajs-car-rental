@@ -20,6 +20,10 @@ h1{
     font-size: 2rem;
 }
 
+li{
+    list-style: none;
+}
+
 
 .content-container{
     padding: 0.3rem;
@@ -88,6 +92,23 @@ h1{
     width: 7rem;
     height: 3rem;
     object-fit: contain;
+}
+/* mobile overlay */
+.nav-overlay{
+    width: 100vw;
+    height: 100vh;
+    z-index: 3;
+    background-color: white;
+    position: fixed;
+    overflow: hidden;
+}
+
+.hidden{
+    display: none;
+}
+
+.visible{
+    display: block;
 }
 
 @media only screen and (max-width: 220px) {
@@ -240,7 +261,7 @@ h1{
     width: 100%;
     justify-content: center;
     align-items: center;
-    padding:10px 0 10px;
+    padding:20px 0 20px;
 }
 
 .why-choose-us{
@@ -278,7 +299,7 @@ h1{
 }
 
 .download-app{
-    margin-top: 4rem;
+    margin-top: 8rem;
     display: grid;
     grid-template-columns: 1fr 1fr;
     max-width: 900px;
@@ -300,3 +321,13 @@ h1{
  }
     
 }
+
+.footer-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    padding: 1rem;
+    margin-top: 3rem;
+}
+
+/* .grid-item{
+} */
