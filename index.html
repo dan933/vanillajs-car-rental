@@ -5,77 +5,77 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap">
 </head>
 
 <body>
     <div id="nav-overlay" class="nav-overlay hidden">
-        <button
-            style="border: none; background-color: white; cursor: pointer; position:absolute; right: 1rem; top:1rem;"
-            id="btn-mobile-nav-close">
-            <i class="fa fa-window-close" aria-hidden="true"></i>
+        <button id="btn-mobile-nav-close">
+            <i class="fa-solid fa-x" aria-hidden="true"></i>
         </button>
-        <div class="flex justify-center flex-center flex-column" style="gap: 1rem; height: 100%;">
-            <button style="border:none; background-color: transparent;"
-                class="secondary pointer btn-close">Home</button>
-            <button style="border:none; background-color: transparent;"
-                class="secondary pointer btn-close">About</button>
-            <button style="border:none; background-color: transparent;" class="secondary pointer btn-close">Vehicle
+        <div class="mbl-overlay-list">
+            <button class="mbl-btns">Home</button>
+            <button class="mbl-btns">About</button>
+            <button class="mbl-btns">Vehicle
                 Models</button>
-            <button style="border:none; background-color: transparent;"
-                class="secondary pointer btn-close">Testimonials</button>
-            <button style="border:none; background-color: transparent;" class="secondary pointer btn-close">Our
+            <button class="mbl-btns">Testimonials</button>
+            <button class="mbl-btns">Our
                 Team</button>
-            <button style="border:none; background-color: transparent;"
-                class="secondary pointer btn-close">Contact</button>
+            <button class="mbl-btns">Contact</button>
         </div>
     </div>
-    <section>
-        <div class="background-container">
-            <img class="background-img" src="./assets/header-bg.png" alt="">
-        </div>
-        <div class="content-container">
-            <div class="car-container">
-                <img class="car-img" src="./assets/header-car.png" alt="">
+    <nav class="nav">
+        <div class="row nav-row">
+            <a href="#" class="logo-container">
+                <img class="logo" src="./assets/logo.png" alt="">
+            </a>
+            <div class="nav-list">
+                <a class="secondary pointer">Home</a>
+                <a class="secondary pointer">About</a>
+                <a class="secondary pointer">Vehicle Models</a>
+                <a class="secondary pointer">Testimonials</a>
+                <a class="secondary pointer">Our Team</a>
+                <a class="secondary pointer">Contact</a>
             </div>
-            <nav class="nav">
-                <div class="logo-container">
-                    <img class="logo" src="./assets/image.png" alt="">
-                </div>
-                <ol class="nav-list">
-                    <li class="secondary pointer">Home</li>
-                    <li class="secondary pointer">About</li>
-                    <li class="secondary pointer">Vehicle Models</li>
-                    <li class="secondary pointer">Testimonials</li>
-                    <li class="secondary pointer">Our Team</li>
-                    <li class="secondary pointer">Contact</li>
-                </ol>
-                <div class="container">
-                    <span class="secondary">Sign In</span>
-                    <button class="btn warn">Register</button>
-                </div>
-            </nav>
-            <nav class="nav-compact">
-                <img class="logo" src="./assets/image.png" alt="">
-                <button id="btn-mobile-nav" style="border: none; background-color: white; cursor: pointer;">
-                    <i class="nav-button fa-solid fa-bars"></i>
-                </button>
-            </nav>
+            <div class="nav-btns-container">
+                <span class="secondary pointer">Sign In</span>
+                <button class="btn warn">Register</button>
+            </div>
+        </div>
+    </nav>
+    <nav class="nav-compact">
+        <div class="row nav-row">
+            <a href="#" class="logo-container">
+                <img id="mbl-logo" class="logo" src="./assets/logo.png" alt="">
+            </a>
+            <button id="btn-mobile-nav" class="nav-compact-btn">
+                <i class="nav-button fa-solid fa-bars"></i>
+            </button>
 
-            <section class="plan-trip">
-                <div class="plan-trip-text">
-                    <h4>plan your trip now</h4>
-                    <h1>Save <span style="color: red;">big</span> with our car rental</h1>
-                    <p style="color: gray;">
-                        Rent the car of your dreams. Unbeatable prices, unlimited miles, flexible pick-up options and
+        </div>
+    </nav>
+    <header>
+        <div class="container">
+            <img class="background-img" src="./assets/header-bg.png" alt="">
+
+            <div class="row header-container">
+                <div class="plan-trip">
+                    <h4 class="header-subtitle">plan your trip now</h4>
+                    <h1 class="header-title">Save <span style="color: var(--primary)">big</span> with our car rental
+                    </h1>
+                    <p class="header-para">
+                        Rent the car of your dreams. Unbeatable prices, unlimited miles, flexible pick-up options
+                        and
                         much
                         more.
                     </p>
-                    <div class="container" style="margin-top: 1rem; flex-wrap: wrap;">
-                        <button class="btn warn">
+                    <div class="header-btns-wrapper">
+                        <button class="header-btn warn">
                             <span>Book Ride</span>
                             <i class="fa-regular fa-circle-check"></i>
                         </button>
-                        <button class="btn btn-black">
+                        <button class="header-btn btn-black">
                             <span>
                                 Learn More
                             </span>
@@ -83,137 +83,166 @@
                         </button>
                     </div>
                 </div>
-            </section>
-            <section class="easy-car-rental">
-                <div class="content-container flex-center">
-                    <h4>Plan your trip now</h4>
-                    <h1>Quick and easy car rental</h1>
-                </div>
+                <figure class="car-container">
+                    <img class="car-img" src="./assets/header-car.png" alt="">
+                </figure>
+            </div>
 
-
-                <div class="easy-car-rental-featured">
-                    <div class="flex flex-center flex-column">
-                        <div>
-                            <img class="feature-img" src="./assets/feature-1.png" alt="">
-                        </div>
-                        <h2>Select car</h2>
-                        <p>
-                            We offers a big range of vehicles for all your driving needs. We have the perfect car to
-                            meet
-                            your needs
-                        </p>
-                    </div>
-                    <div class="flex flex-center flex-column">
-                        <div>
-                            <img class="feature-img" src="./assets/feature-2.png" alt="">
-                        </div>
-                        <h2>Contact Operator</h2>
-                        <p>
-                            Our knowledgeable and friendly operators are always ready to help with any questions or
-                            concerns
-                        </p>
-                    </div>
-                    <div class="flex flex-center flex-column">
-                        <div>
-                            <img class="feature-img" src="./assets/feature-3.png" alt="">
-                        </div>
-                        <h2>Let's Drive</h2>
-                        <p>
-                            Whether you're hitting the open road, we've got you covered with our wide range of cars
-                        </p>
-                    </div>
-                </div>
-            </section>
         </div>
-        <div class="save-banner">
-            <h1>Save big with our cheap car rental!</h1>
-            <p>Top Airports. Local Suppliers. <span style="color: red;">24/7</span> Support.</p>
-        </div>
-        <img style=" width: 100%;display: block; margin: 0 auto; max-width: 900px;" src="./assets/choose-car.png"
-            alt="">
-
-        <div class="content-container">
-
-            <div class="why-choose-us">
-                <div style="width: 500px;">
-                    <h4>
-                        Why Choose Us
-                    </h4>
-                    <h1>
-                        Best valued deals you will ever find
-                    </h1>
-                    <p>
-                        Discover the best deals you'll ever find with our unbeatable offers. We're dedicated to
-                        providing
-                        you with the best value for your money, so you can enjoy top-quality services and products
-                        without
-                        breaking the bank. Our deals are designed to give you the ultimate renting experience, so don't
-                        miss
-                        out on your chance to save big.
-                    </p>
-                    <button class="btn warn">
-                        <span>Find Details</span>
-                        <i class="fa-solid fa-angle-right"></i>
-                    </button>
-                </div>
-                <div style="display: flex; flex-direction: column; gap: 5px; width: 400px;">
-                    <div style="display: flex;">
-                        <img class="feature-img" src="./assets/choose-1.png" alt="">
-                        <div>
-                            <h2>Cross Country Drive</h2>
-                            <p>
-                                Take your driving experience to the next level with our top-notch vehicles for your
-                                cross-country adventures.
-                            </p>
-
-                        </div>
+    </header>
+    <main>
+        <section class="easy-car-rental">
+            <div class="container">
+                <div class="row features-row">
+                    <div class="content-container easy-car-rental-text">
+                        <h4 class="features-subtitle">Plan your trip now</h4>
+                        <h2 class="features-title">Quick and easy car rental</h2>
                     </div>
-                    <div style="display: flex;">
-                        <img class="feature-img" src="./assets/choose-2.png" alt="">
-                        <div>
-                            <h2>All Inclusive Pricing</h2>
-                            <p>
-                                Get everything you need in one convenient, transparent price with our all-inclusive
-                                pricing
-                                policy.
+                    <div class="easy-car-rental-featured">
+                        <div class="feature-item flex flex-center flex-column">
+                            <div class="plan-trip-img-wrapper">
+                                <img class="plan-trip-img" src="./assets/feature-1.png" alt="">
+                            </div>
+                            <h2 class="featured-title">Select car</h2>
+                            <p class="featured-para">
+                                We offers a big range of vehicles for all your driving needs. We have the perfect car to
+                                meet
+                                your needs
                             </p>
-
                         </div>
-                    </div>
-                    <div style="display: flex;">
-                        <img class="feature-img" src="./assets/choose-3.png" alt="">
-                        <div>
-                            <h2>No Hidden Charges</h2>
-                            <p>
-                                Enjoy peace of mind with our no hidden charges policy. We believe in transparent and
-                                honest
-                                pricing.
+                        <div class="feature-item flex flex-center flex-column">
+                            <div class="plan-trip-img-wrapper">
+                                <img class="plan-trip-img" src="./assets/feature-2.png" alt="">
+                            </div>
+                            <h2 class="featured-title">Contact Operator</h2>
+                            <p class="featured-para">
+                                Our knowledgeable and friendly operators are always ready to help with any questions or
+                                concerns
                             </p>
-
+                        </div>
+                        <div class="feature-item flex flex-center flex-column">
+                            <div class="plan-trip-img-wrapper">
+                                <img class="plan-trip-img" src="./assets/feature-3.png" alt="">
+                            </div>
+                            <h2 class="featured-title">Let's Drive</h2>
+                            <p class="featured-para">
+                                Whether you're hitting the open road, we've got you covered with our wide range of cars
+                            </p>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="testimonials flex flex-column flex-center" style="margin-top: 4rem;">
-                <h4>Reviewed by People</h4>
-                <h1>Client's Testimonials</h1>
-                <p style="max-width: 500px;">Discover the positive impact we've made on the our clients by reading
+        </section>
+        <div class="save-banner">
+            <div class="banner__container">
+                <h1 class="banner-title">Save big with our cheap car rental!</h1>
+                <p class="banner-sub-title">Top Airports. Local Suppliers. <span style="color: red;">24/7</span>
+                    Support.
+                </p>
+            </div>
+        </div>
+        <section id="choose">
+            <div class="container">
+                <div class="row choose__row">
+                    <div class="choose-car-wrapper">
+                        <div>
+                            <img style=" width: 100%; height:100%;" src="./assets/choose-car.png" alt="">
+                        </div>
+                    </div>
+                    <div class="why-choose-us">
+                        <div class="choose-text">
+                            <h4 class="choose-text-subtitle">
+                                Why Choose Us
+                            </h4>
+                            <h1 class="choose-text-title">
+                                Best valued deals you will ever find
+                            </h1>
+                            <p class="choose__feature__text__para">
+                                Discover the best deals you'll ever find with our unbeatable offers. We're dedicated to
+                                providing
+                                you with the best value for your money, so you can enjoy top-quality services and
+                                products
+                                without
+                                breaking the bank. Our deals are designed to give you the ultimate renting experience,
+                                so
+                                don't
+                                miss
+                                out on your chance to save big.
+                            </p>
+                            <button class="choose-text-btn">
+                                <span>Find Details</span>
+                                <i class="fa-solid fa-angle-right"></i>
+                            </button>
+                        </div>
+                        <div class="choose-feature-container">
+                            <div class="choose-feature-item">
+                                <div class="feature-img-wrapper">
+                                    <img class="feature-img" src="./assets/choose-1.png" alt="">
+                                </div>
+                                <div>
+                                    <h2 class="choose__feature__text__title">Cross Country Drive</h2>
+                                    <p class="choose__feature__text__para">
+                                        Take your driving experience to the next level with our top-notch vehicles for
+                                        your
+                                        cross-country adventures.
+                                    </p>
+
+                                </div>
+                            </div>
+                            <div class="choose-feature-item">
+                                <img class="feature-img" src="./assets/choose-2.png" alt="">
+                                <div>
+                                    <h2 class="choose__feature__text__title">All Inclusive Pricing</h2>
+                                    <p class="choose__feature__text__para">
+                                        Get everything you need in one convenient, transparent price with our
+                                        all-inclusive
+                                        pricing
+                                        policy.
+                                    </p>
+
+                                </div>
+                            </div>
+                            <div class="choose-feature-item">
+                                <img class="feature-img" src="./assets/choose-3.png" alt="">
+                                <div>
+                                    <h2 class="choose__feature__text__title">No Hidden Charges</h2>
+                                    <p>
+                                        Enjoy peace of mind with our no hidden charges policy. We believe in transparent
+                                        and
+                                        honest
+                                        pricing.
+                                    </p>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="testimonials-bg container">
+            <div class="testimonials row">
+                <h4 class="testimonial-subheader">Reviewed by People</h4>
+                <h1 class="testimonials-header">Client's Testimonials</h1>
+                <p class="testimonials-paragraph">Discover the positive impact we've made on the
+                    our clients by reading
                     through
                     their testimonials. Our
                     clients have experienced our service and results, and they're eager to share their positive
                     experiences
                     with you.
                 </p>
-                <div class="flex flex-wrap flex-center flex-center justify-center flex-wrap"
-                    style="gap:1rem; margin-top: 2rem;">
+                <div class="testimonials-list row">
                     <div class="card flex flex-column">
-                        <p>
+                        <p class="testimonial-review">
                             "We rented a car from this website and had an amazing experience! The booking was easy and
                             the
                             rental rates were very affordable. "
                         </p>
-                        <div class="flex">
-                            <img src="./assets/testimonial-1.jpg" alt="" class="avatar">
+                        <div class="testimonial-info">
+                            <div class="testimonial-info-img-wrapper">
+                                <img src="./assets/testimonial-1.jpg" alt="" class="avatar">
+                            </div>
                             <div class="flex flex-column">
                                 <h4 class="avatar-title">Parry Hotter</h4>
                                 <p class="avatar-text">Belgrade</p>
@@ -223,13 +252,15 @@
                         </div>
                     </div>
                     <div class="card flex flex-column">
-                        <p>
+                        <p class="testimonial-review">
                             "We rented a car from this website and had an amazing experience! The booking was easy and
                             the
                             rental rates were very affordable. "
                         </p>
-                        <div class="flex flex-center">
-                            <img src="./assets/testimonial-1.jpg" alt="" class="avatar">
+                        <div class="testimonial-info">
+                            <div class="testimonial-info-img-wrapper">
+                                <img src="./assets/testimonial-1.jpg" alt="" class="avatar">
+                            </div>
                             <div class="flex flex-column">
                                 <h4 class="avatar-title">Ron Rizzly</h4>
                                 <p class="avatar-text">Novi Sad</p>
@@ -240,62 +271,68 @@
                     </div>
 
                 </div>
-
             </div>
-            <div class="download-app" style="position: relative;">
-                <div>
-                    <h1 class="download-app-header">
-                        Download our app to get most out of it
-                    </h1>
-                    <p style="text-align: center;">
-                        Thrown shy denote ten ladies though ask saw. Or by to he going think order event music.
-                        Incommode so
-                        intention defective at convinced. Led income months itself and houses you.
-                    </p>
-                    <div class="flex flex-wrap flex-center justify-center" style="gap:1rem;">
-                        <img style=" max-width: 180px;" src=" ./assets/google-play.svg" alt="">
-                        <img style=" max-width: 180px;" src="./assets/app-store.svg" alt="">
 
+
+        </div>
+        <section class="download-section">
+            <div class="container">
+                <div class="row">
+                    <div class="download-text">
+                        <h2 class="download-app-header">
+                            Download our app to get most out of it
+                        </h2>
+                        <p class="download-text-para">
+                            Thrown shy denote ten ladies though ask saw. Or by to he going think order event music.
+                            Incommode so
+                            intention defective at convinced. Led income months itself and houses you.
+                        </p>
+                        <div class="text-link-container">
+                            <a href="#" class="download__text__link">
+                                <img src="assets/google-play.svg" alt="" class="download__text__link__img">
+                            </a>
+                            <a href="#" class="download__text__link">
+                                <img src="assets/app-store.svg" alt="" class="download__text__link__img">
+                            </a>
+
+                        </div>
                     </div>
                 </div>
-                <div style="position: absolute; right: 0px; bottom: 0;" class="phone-bg">
-                    <img style=" height: 100%; width: 100%; object-fit: fill;" src=" ./assets/download-bg.png" alt=""
-                        srcset="">
-                </div>
-            </div>
-        </div>
-        <footer class="content-container">
-            <div class="footer-grid">
-                <div class="flex flex-column flex-center">
-                    <h4 style="font-family: Arial, Helvetica, sans-serif;">
+        </section>
+    </main>
+    <footer>
+        <div class="container">
+            <div class="row footer-row">
+                <div class="footer-item">
+                    <h4 class="footer-item-title">
                         <span style="font-weight: bolder;">CAR</span> Rental
                     </h4>
-                    <p style="max-width: 200px;">
+                    <p class="footer-para">
                         We offer a big range of vehicles for all your driving needs. We have the perfect car to meet
                         your needs.
                     </p>
-                    <a href="tel:(123) -456-789" class="btn secondary">
+                    <a href="tel:(123) -456-789" class="footer-btn secondary">
                         <i class="fa-solid fa-phone footer__intro__link__icon" aria-hidden="true"></i>
                         <span>(123) -456-789</span>
                     </a>
-                    <a href="malito:carrental@gmail.com" class="btn secondary">
+                    <a href="malito:carrental@gmail.com" class="footer-btn secondary">
                         <i class="fa-solid fa fa-envelope" aria-hidden="true"></i>
                         <span>carrental@gmail.com</span>
                     </a>
-                    <a href="https://xpeedstudio.com/" class="btn secondary">
+                    <a href="https://xpeedstudio.com/" class="footer-btn secondary">
                         Design by XpeedStudio
                     </a>
                 </div>
-                <div class="flex flex-column">
-                    <h4 style="text-align: center;">Company</h4>
-                    <button class="btn secondary">New York</button>
-                    <button class="btn secondary">Careers</button>
-                    <button class="btn secondary">Mobile</button>
-                    <button class="btn secondary">Blog</button>
-                    <button class="btn secondary">How we work</button>
+                <div class="footer-company-item">
+                    <h4 class="footer-item-title">Company</h4>
+                    <a class="footer-btn">New York</a>
+                    <a class="footer-btn">Careers</a>
+                    <a class="footer-btn">Mobile</a>
+                    <a class="footer-btn">Blog</a>
+                    <a class="footer-btn">How we work</a>
                 </div>
-                <div class="flex flex-column flex-center">
-                    <h4>
+                <div class="footer-item">
+                    <h4 class="footer-item-title">
                         Working hours
                     </h4>
                     <p>Mon - Fri: 9:00AM - 9:00PM</p>
@@ -303,19 +340,20 @@
                     <p>Sun: Closed</p>
 
                 </div>
-                <div class="flex flex-column flex-center">
-                    <h4>
+                <div class="footer-subscription-item">
+                    <h4 class="footer-item-title">
                         Subscription
                     </h4>
-                    <p style="width: 160px;">Subscribe your Email address for latest news & updates.</p>
-                    <input style="background-color: rgb(245, 241, 241); border:none; padding: 10px;"
-                        placeholder="Enter Email Address" type="text" />
-                    </br>
-                    <button class="btn warn">Submit</button>
+                    <p class="footer-para">Subscribe your Email address for latest news & updates.</p>
+                    <div class="footer-email-container">
+                        <input class="footer-email-input" placeholder="Enter Email Address" type="text" />
+                        <button class="footer-email-btn">Submit</button>
+                    </div>
                 </div>
             </div>
-        </footer>
-    </section>
+        </div>
+        </div>
+    </footer>
     <script src="./index.js"></script>
 </body>
 
