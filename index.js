@@ -8,10 +8,11 @@ let content = document.querySelectorAll("main,footer,header");
 if (navButton) {
   navButton.onclick = () => {
     overlay.classList.remove("hidden");
+    overlay.style.opacity = 1;
 
     for (let index = 0; index < content.length; index++) {
       const element = content[index];
-      element.classList.add("hidden");
+      element.classList.add("display-none");
     }
   };
 }
@@ -19,11 +20,12 @@ if (navButton) {
 if (closeButton) {
   closeButton.onclick = () => {
     overlay.classList.add("hidden");
+    overlay.style.opacity = 0;
 
     for (let index = 0; index < content.length; index++) {
       const element = content[index];
 
-      element.classList.remove("hidden");
+      element.classList.remove("display-none");
     }
   };
 }
