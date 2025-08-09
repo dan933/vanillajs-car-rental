@@ -789,6 +789,12 @@ nav{
     border-radius: 4px;
     box-shadow: 0 10px 15px 0 rgba(255, 83, 48, 0.35);
     transition: 300ms ease;
+    cursor: pointer;
+}
+
+.footer-email-btn:hover{
+      background-color: #fa4226;
+        box-shadow: 0 10px 15px 0 rgba(255, 83, 48, 0.5);
 }
 
 .footer-email-input{
